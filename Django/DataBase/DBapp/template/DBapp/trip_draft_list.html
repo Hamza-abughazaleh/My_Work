@@ -1,0 +1,17 @@
+{% extends "DBapp/base.html" %}
+{% block content %}
+ {% for key,trip in results.items %}
+
+   <div class="row">
+     <div class="col-12">
+       <div class="trip">
+         <h1><a href="{% url 'trip_detail' pk=trip.pk %}">{{ trip.title }}</a></h1>
+         <p>{{ trip.text|safe|linebreaksbr|truncatechars:200 }}</p>
+         <p class="date">Created Date: {{ trip.date |date:'d-m-y' }}</p>
+            <p class="date">Created Name: {{ user.username }}</p>
+       </div>
+     </div>
+   </div>
+
+ {% endfor %}
+{% endblock %}

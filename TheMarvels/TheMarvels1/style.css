@@ -1,0 +1,197 @@
+body {
+      background-image:url("marvel-comics-characters.jpg");
+      background-color:lightgray;
+      background-repeat:no-repeat;
+      background-size:100% 22%;
+      padding-top:160px;
+      font-family:arial;
+} 
+
+
+ 
+ header{max-width:50%;
+        margin:auto;
+        background-color:powderblue;
+        padding:2px 10px 2px 10px;
+}
+
+#div1 {
+     background-color:white;
+     max-width:550px;
+     border-top-style: solid; 
+     border-color:powderblue;
+     border-width:9px;
+     margin:auto;
+     padding: 10px 70px 48px 35px;
+     outline:none;
+
+}
+
+
+.font {
+       font-size:225%;
+    
+}
+
+.font2{ font-size:80%;
+        text-align:center; 
+        color:gray;}
+
+
+        
+
+pre { font-family:arial;
+      font-size:80%;
+      }
+
+span {
+      color:red;
+      outline:none;
+}
+
+textarea {
+      border:none;
+      outline:none;
+    
+}
+
+
+form
+{ font-size:125%;
+ outline:none;
+ 
+}
+
+
+input{
+   font-size:70%;
+   background-color:#008CBA;
+   color:white;
+   padding: 8px 16px;
+   border-radius: 3px;
+   outline:none;
+   border-style:none;
+}
+
+#div2{
+      text-align:center;
+
+}
+
+
+
+
+
+
+.toggle-nav {
+    display:none;
+}
+
+@media screen and (min-width: 860px) {
+    .menu {
+        width:100%;
+        padding:10px 18px;
+        box-shadow:0px 1px 1px rgba(0,0,0,0.15);
+        border-radius:3px;
+        background:lightgray;
+    }
+}
+
+.menu ul {
+    display:inline-block;
+}
+ 
+.menu li {
+    margin:0px 40px 0px 0px;
+    float:left;
+    list-style:none;
+    font-size:17px;
+
+}
+
+.menu a {
+    color:#777;
+    transition:color linear 0.15s;
+}
+
+.menu li:last-child {
+    margin-right:0px;
+}
+
+.menu a:hover, .menu .current-item a {
+    text-decoration:none;
+    color:#66a992;
+}
+
+
+
+@media screen and (max-width: 860px) {
+    .menu {
+        position:relative;
+        display:inline-block;
+    }
+ 
+    .menu ul.active {
+        display:none;
+    }
+ 
+    .menu ul {
+        width:100%;
+        position:absolute;
+        top:120%;
+        left:0px;
+        padding:10px 18px;
+        box-shadow:0px 1px 1px rgba(0,0,0,0.15);
+        border-radius:3px;
+        background:#303030;
+    }
+ 
+    .menu ul:after {
+        width:0px;
+        height:0px;
+        position:absolute;
+        top:0%;
+        left:22px;
+        content:'';
+        transform:translate(0%, -100%);
+        border-left:7px solid transparent;
+        border-right:7px solid transparent;
+        border-bottom:7px solid #303030;
+    }
+ 
+    .menu li {
+        margin:5px 0px 5px 0px;
+        float:none;
+        display:block;
+    }
+ 
+    .menu a {
+        display:block;
+    }
+ 
+    .toggle-nav {
+        padding:20px;
+        float:left;
+        display:inline-block;
+        box-shadow:0px 1px 1px rgba(0,0,0,0.15);
+        border-radius:3px;
+        background:#303030;
+        text-shadow:0px 1px 0px rgba(0,0,0,0.5);
+        color:#777;
+        font-size:20px;
+        transition:color linear 0.15s;
+    }
+ 
+    .toggle-nav:hover, .toggle-nav.active {
+        text-decoration:none;
+        color:#66a992;
+    }
+
+
+}
+
+
+
+
+
+

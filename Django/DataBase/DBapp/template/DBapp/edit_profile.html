@@ -1,0 +1,17 @@
+{% extends "DBapp/base.html" %}
+{% block content %}
+
+<div class="row loader">
+ <div class="col-12">
+   <form enctype="multipart/form-data" method="POST" class="form-horizontal">
+    <legend>Edit a user</legend>
+    {% csrf_token %}
+    {{ user_form.as_p }}
+    {{ profile_form.as_p }}
+    <div class="form-actions">
+        <input type="submit" class="btn btn-primary" value="Save">
+    </div>
+</form>
+ </div>
+</div>
+{% endblock %}

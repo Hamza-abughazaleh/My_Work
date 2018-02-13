@@ -1,0 +1,16 @@
+{% extends "DBapp/base.html" %}
+{% block content %}
+<div class="row loader">
+ <div class="col-12">
+   <h1>{{ user.username }}</h1>
+   <h1>{{ user.first_name }}</h1>
+   <h1>{{ user.last_name }}</h1>
+   <h1>{{ user.email }}</h1>
+    <img src= {{ profile.profile_pic.url }} class="rounded-circle" width="200px" height="200px"> </a>
+    <br>
+    <br>
+    <a href="{% url 'profile_edit' pk=user.pk %}" class="btn btn-primary">Edit Profile</a>
+    <a href="{% url 'profile_image_edit' pk=user.pk %}" class="btn btn-primary">Edit Profile Image</a>
+ </div>
+</div>
+{% endblock %}

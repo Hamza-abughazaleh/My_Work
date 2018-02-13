@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>USER PAGE</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static "css/style.css" %}">
+  </head>
+  <body>
+    <!-- <h1>YOU ARE IN USER PAGE</h1>
+    {% if access_records %}
+    {% for u in access_records %}
+      <div>
+        <h4>{{u.id}}.User Information</h4>
+        <ul>
+          <li>First Name: {{u.first_name}}</li>
+          <li>Last Name: {{u.last_name}}</li>
+          <li>Email: {{u.email}}</li>
+        </ul>
+      </div>
+    {% endfor %}
+    {% else %}
+    <p>NO ACCESS RECORDS</p>
+    {%endif%}-->
+  <!--  <h1>YOU ARE IN USER PAGE</h1>
+    {% if access_records %}
+    <ol>
+        {% for u in access_records %}
+        <li>User Information</li>
+        <ul>
+          <li>First Name: {{u.first_name}}</li>
+          <li>Last Name: {{u.last_name}}</li>
+          <li>Email: {{u.email}}</li>
+        </ul>
+        {% endfor %}
+    </ol>
+    {% else %}
+    <p>NO ACCESS RECORDS</p>
+    {%endif%}-->
+    <div class="container">
+      <h1>Please sing up here</h1>
+      <form  method="post">
+        {{ form.as_p }}
+        {% csrf_token %}
+        <input type="submit" name="btn btn-primary" value="Submit">
+
+      </form>
+    </div>
+
+  </body>
+</html>
