@@ -1,0 +1,18 @@
+#image_of_login_page{
+ background-image: url('pexels-photo-175039.jpg') ;
+ background-repeat: no-repeat;
+ background-size:cover;
+ min-height:100vh;
+ z-index:-10;
+ -webkit-background-size: cover;
+ -moz-background-size: cover;
+ -o-background-size: cover; }
+
+#baseoverlay{
+  background-color:rgba(0,0,0,0.3);
+  -webkit-background-color:rgba(0,0,0,0.3);
+  -moz-background-color:rgba(0,0,0,0.3);
+  -o-background-color:rgba(0,0,0,0.3);
+  background-size:cover;
+  min-height:100vh;
+  z-index:-5;}

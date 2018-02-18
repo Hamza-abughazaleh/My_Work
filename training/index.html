@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>TRAINING</title>
+    <link rel="stylesheet" type="text/css" href="CSS.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="JS.js"></script>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+         <div class=" col-12 border">
+            <h1 style="float:left; padding-right:10px;">Minagate</h1>
+            <img src="Logo_TV_2015.png" alt="" width="50px" height="50px">
+            <div class="d-flex justify-content-end" style="float:right;">
+                <a href="index.html" class="p-3">Users</a>
+                <a href="" class="p-3">Logout</a>
+             </div>
+        </div>
+        </div>
+        <div class="row">
+        <div class="border col-4 size_of_div" id="entrydata ">
+           <table id= "entrydata">
+            </table>
+            <button type="button" class="btn btn-success  btn-lg mt-5" id="add_user"
+            onclick="myFunction()">New User</button>
+        </div>
+
+        <div  class="border col-7 size_of_div">
+                <table class="justify-content-center">
+            <form  method="POST" name="myForm" id="form_id">
+                    <tr>
+                        <td>
+                            <h1 class="form mr-2 pb-5">Name</h5> <input type="text" class="form" id="name" required disabled>
+                        </td>
+                    </tr>
+                    <tr >
+                        <td>
+                            <h1 class="form mr-2">Email</h5> <input type="text" class="form mr-5" id="email" required disabled>
+                        </td>
+                        <td>
+                            <h1 class="form">Phone</h5> <input type="text" class="form" id="phone" required disabled>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                                <h1 class="form mr-3">City</h5> <input type="text" class="form mr-5" id="city" required disabled>
+                        </td>
+                        <td>
+                                <h1 class="form mr-2">Street</h5> <input type="text" class="form" id="street" required disabled>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                                <h1 class="form mr-2">Website</h5> <input type="text" class="form" id="website" required disabled>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                                <input type="submit" value="Save" class="btn btn-success  btn-lg float-xl-right" id="view" onclick="myFunctionSubmit()"></input>
+                        </td>
+                    </tr>
+
+            </form>
+        </table>
+        </div>
+     </div>
+    </div>
+
+</body>
+</html>

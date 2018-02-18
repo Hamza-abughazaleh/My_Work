@@ -1,0 +1,23 @@
+
+.size_of_div{
+    margin-left: 40px;
+}
+
+.border{
+    padding: 5px;
+    margin-top: 20px;
+    border: 2px;
+
+}
+
+.form{
+    display: inline-block;
+}
+
+tr{
+    align-content: center;
+}
+
+#view{
+  display: none;
+}
